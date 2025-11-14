@@ -1,0 +1,637 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Đăng Dũng - Tư vấn bán hàng Mitsubishi | Nam Khánh Hòa</title>
+    <meta name="description"
+        content="Đăng Dũng - Tư vấn bán hàng Mitsubishi tại Nam Khánh Hòa. Xpander, Xpander Cross, Xforce, Attrage, Triton, Destinator. Nhận báo giá, lái thử, hỗ trợ vay vốn." />
+    <meta name="keywords"
+        content="Mitsubishi Nam Khánh Hòa, Xpander, Xpander Cross, Xforce, Attrage, Triton, Destinator, mua xe Mitsubishi" />
+    <meta name="author" content="Đăng Dũng" />
+    <!-- OpenGraph -->
+    <meta property="og:title" content="Đăng Dũng - Tư vấn bán hàng Mitsubishi | Nam Khánh Hòa" />
+    <meta property="og:description"
+        content="Tư vấn & hỗ trợ mua Mitsubishi: giá tốt, giao xe nhanh, hỗ trợ vay. Liên hệ Đăng Dũng ngay!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://via.placeholder.com/1200x630?text=Mitsubishi+%C4%90%C4%83ng+D%C5%A9ng" />
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+    <link rel="icon" href="./img/logo-tab.png" type="image/png">
+
+    <style>
+        /* Reset & base */
+        :root {
+            --accent: #C8102E;
+            --dark: #111827;
+            --muted: #6B7280;
+            --card: #ffffff
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        html,
+        body {
+            height: 100%
+        }
+
+        body {
+            font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+            margin: 0;
+            color: var(--dark);
+            background: #f7f7f9
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none
+        }
+
+        img {
+            max-width: 100%;
+            display: block
+        }
+
+        /* container */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 24px
+        }
+
+        /* header */
+        header {
+            background: linear-gradient(90deg, #fff 0%, #fff 50%);
+            padding: 18px 0;
+            position: sticky;
+            top: 0;
+            z-index: 40;
+            box-shadow: 0 2px 6px rgba(16, 24, 40, 0.04)
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between
+        }
+
+        .brand {
+            display: flex;
+            gap: 12px;
+            align-items: center
+        }
+
+        .brand img {
+            width: 56px;
+            height: 40px;
+            object-fit: contain;
+            border-radius: 6px
+        }
+
+        .brand h1 {
+            font-size: 18px;
+            margin: 0
+        }
+
+        nav ul {
+            display: flex;
+            gap: 14px;
+            list-style: none;
+            margin: 0;
+            padding: 0
+        }
+
+        .cta {
+            background: var(--accent);
+            color: #fff;
+            padding: 10px 14px;
+            border-radius: 10px;
+            box-shadow: 0 6px 18px rgba(200, 16, 46, 0.12)
+        }
+
+        /* hero */
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr 420px;
+            gap: 24px;
+            align-items: center;
+            padding: 36px 0
+        }
+
+        .hero-left h2 {
+            margin: 0;
+            font-size: 28px
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 6px 10px;
+            background: #FEF3F2;
+            color: var(--accent);
+            border-radius: 999px;
+            font-weight: 600;
+            margin-bottom: 12px
+        }
+
+        .hero p {
+            color: var(--muted);
+            line-height: 1.6
+        }
+
+        .buttons {
+            display: flex;
+            gap: 12px;
+            margin-top: 18px
+        }
+
+        .btn {
+            padding: 12px 16px;
+            border-radius: 10px;
+            font-weight: 600;
+            border: 1px solid rgba(0, 0, 0, 0.05)
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: #fff
+        }
+
+        .hero-right {
+            background: linear-gradient(180deg, #fff, #fff);
+            padding: 18px;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(15, 23, 42, 0.06)
+        }
+
+        .spec {
+            display: flex;
+            flex-direction: column;
+            gap: 8px
+        }
+
+        .spec div {
+            display: flex;
+            justify-content: space-between
+        }
+
+        /* models grid */
+        .models {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+            margin-top: 28px
+        }
+
+        .card {
+            background: var(--card);
+            padding: 14px;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(15, 23, 42, 0.04)
+        }
+
+        .card h3 {
+            margin: 6px 0
+        }
+
+        .price {
+            font-weight: 700;
+            color: var(--accent)
+        }
+
+        .card .meta {
+            color: var(--muted);
+            font-size: 13px
+        }
+
+        .card .actions {
+            display: flex;
+            gap: 8px;
+            margin-top: 12px
+        }
+
+        /* features */
+        .features {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+            margin-top: 22px
+        }
+
+        .feature {
+            background: #fff;
+            padding: 12px;
+            border-radius: 10px;
+            min-width: 200px;
+            box-shadow: 0 6px 18px rgba(15, 23, 42, 0.04)
+        }
+
+        /* contact */
+        .contact {
+            background: linear-gradient(180deg, #fff, #fff);
+            padding: 18px;
+            border-radius: 12px;
+            margin-top: 26px;
+            box-shadow: 0 8px 30px rgba(15, 23, 42, 0.04)
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px
+        }
+
+        input,
+        select,
+        textarea {
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #E6E7EB
+        }
+
+        .row {
+            display: flex;
+            gap: 10px
+        }
+
+        /* testimonials & blog */
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px
+        }
+
+        .testimonial {
+            background: #fff;
+            padding: 12px;
+            border-radius: 12px
+        }
+
+        /* footer */
+        footer {
+            margin-top: 28px;
+            padding: 28px 0;
+            color: var(--muted);
+            font-size: 14px
+        }
+
+        /* sticky call */
+        .sticky-cta {
+            position: fixed;
+            right: 18px;
+            bottom: 18px;
+            z-index: 60
+        }
+
+        .sticky-cta a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 14px;
+            border-radius: 999px;
+            background: var(--accent);
+            color: #fff;
+            font-weight: 700;
+            box-shadow: 0 10px 30px rgba(200, 16, 46, 0.18)
+        }
+
+        /* responsive */
+        @media (max-width:980px) {
+            .hero {
+                grid-template-columns: 1fr;
+            }
+
+            .models {
+                grid-template-columns: repeat(2, 1fr)
+            }
+        }
+
+        @media (max-width:640px) {
+            .models {
+                grid-template-columns: 1fr
+            }
+
+            .nav ul {
+                display: none
+            }
+
+            .brand h1 {
+                font-size: 16px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container nav">
+            <div class="brand">
+                <!-- <img src="https://via.placeholder.com/300x180?text=Mitsu" alt="logo"> -->
+                <img src="./img/Logo.png" alt="logo">
+                <div>
+                    <h1>Đăng Dũng</h1>
+                    <div style="font-size:13px;color:var(--muted)">Tư vấn bán hàng Mitsubishi - Nam Khánh Hòa</div>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#models">Xe</a></li>
+                    <li><a href="#offers">Ưu đãi</a></li>
+                    <li><a href="#testimonials">Khách hàng</a></li>
+                    <li><a href="#contact">Liên hệ</a></li>
+                </ul>
+            </nav>
+            <div>
+                <a class="cta" href="tel:+84901234567">Gọi: 094 589 3127</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <div class="hero-left">
+                <span class="badge">Chương trình: Miễn 100% thuế trước bạ</span>
+                <h2>Đăng Dũng — Tư vấn & hỗ trợ mua Mitsubishi tại Nam Khánh Hòa</h2>
+                <p>Tôi hỗ trợ: tư vấn chọn xe phù hợp – báo giá lăn bánh chính xác – làm thủ tục vay trả góp – giao xe
+                    tận nơi. Chuyên Xpander, Xpander Cross, Xforce, Attrage, Triton, Destinator.</p>
+
+                <div class="buttons">
+                    <a class="btn btn-primary" href="#contact" onclick="scrollToSection('contact')">Đặt lái thử ngay</a>
+                    <a class="btn" href="#models" onclick="scrollToSection('models')">Xem xe</a>
+                </div>
+
+                <div class="features">
+                    <div class="feature"><strong>Giao xe nhanh</strong>
+                        <div class="meta">Xe có sẵn, giao ngay</div>
+                    </div>
+                    <div class="feature"><strong>Giá cạnh tranh</strong>
+                        <div class="meta">So sánh & chọn lựa</div>
+                    </div>
+                    <div class="feature"><strong>Hỗ trợ vay</strong>
+                        <div class="meta">Lãi suất ưu đãi</div>
+                    </div>
+                </div>
+
+            </div>
+            <aside class="hero-right">
+                <div style="display:flex;gap:12px;align-items:center">
+                    <!-- <img src="https://via.placeholder.com/220x140?text=Xpander" alt="Xpander" style="width:120px;border-radius:8px;"> -->
+                    <img src="./img/XPD-Cros.jpg" alt="Xpander" style="width:120px;border-radius:8px;">
+                    <div>
+                        <div style="font-weight:800">Xpander Cross</div>
+                        <div class="meta">SUV gia đình – linh hoạt & tiết kiệm</div>
+                    </div>
+                </div>
+
+                <div class="spec" style="margin-top:12px">
+                    <div><span>Giá lăn bánh (từ)</span><span class="price">~ 704 triệu</span></div>
+                    <div><span>Ưu đãi</span><span class="meta">Miễn 100% thuế trước bạ</span></div>
+                    <div><span>Liên hệ</span><span class="meta">094 589 3127 (Zalo)</span></div>
+                </div>
+            </aside>
+        </section>
+
+        <section id="models">
+            <h2>Danh mục xe nổi bật</h2>
+            <p style="color:var(--muted)">Chọn mẫu xe bạn quan tâm — nhấn "Nhận báo giá" để được tư vấn chi tiết.</p>
+
+            <div class="models">
+                <!-- Card template -->
+                <article class="card">
+                    <!-- <img src="https://via.placeholder.com/600x360?text=Xpander" alt="Xpander"> -->
+                    <img src="./img/XPD.jpg" alt="Xpander">
+                    <h3>Xpander</h3>
+                    <div class="meta">Gia đình 7 chỗ — tiết kiệm nhiên liệu</div>
+                    <div class="price">Giá từ 555 triệu</div>
+                    <div class="actions"><button class="btn btn-primary" onclick="prefillForm('Xpander')">Nhận báo
+                            giá</button><button class="btn" onclick="openGallery('Xpander')">Xem ảnh</button></div>
+                </article>
+
+                <article class="card">
+                    <!-- <img src="https://via.placeholder.com/600x360?text=Xpander+Cross" alt="Xpander Cross"> -->
+                    <img src="./img/XPD-Cros.jpg" alt="Xpander Cross">
+                    <h3>Xpander Cross</h3>
+                    <div class="meta">Phiên bản SUV mạnh mẽ hơn</div>
+                    <div class="price">Giá từ 699 triệu</div>
+                    <div class="actions"><button class="btn btn-primary" onclick="prefillForm('Xpander Cross')">Nhận báo
+                            giá</button><button class="btn" onclick="openGallery('Xpander Cross')">Xem ảnh</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <!-- <img src="https://via.placeholder.com/600x360?text=Xforce" alt="Xforce"> -->
+                    <img src="./img/Xforce.jpg" alt="Xforce">
+                    <h3>Xforce</h3>
+                    <div class="meta">SUV đô thị – thiết kế thể thao</div>
+                    <div class="price">Giá từ 785 triệu</div>
+                    <div class="actions"><button class="btn btn-primary" onclick="prefillForm('Xforce')">Nhận báo
+                            giá</button><button class="btn" onclick="openGallery('Xforce')">Xem ảnh</button></div>
+                </article>
+
+                <article class="card">
+                    <!-- <img src="https://via.placeholder.com/600x360?text=Attrage" alt="Attrage"> -->
+                    <img src="./img/Attrage.jpg" alt="Attrage">
+                    <h3>Attrage</h3>
+                    <div class="meta">Sedan nhỏ gọn – kinh tế</div>
+                    <div class="price">Giá từ 350 triệu</div>
+                    <div class="actions"><button class="btn btn-primary" onclick="prefillForm('Attrage')">Nhận báo
+                            giá</button><button class="btn" onclick="openGallery('Attrage')">Xem ảnh</button></div>
+                </article>
+
+                <article class="card">
+                    <!-- <img src="https://via.placeholder.com/600x360?text=Triton" alt="Triton"> -->
+                    <img src="./img/Triton.jpg" alt="Triton">
+                    <h3>Triton</h3>
+                    <div class="meta">Pickup – mạnh mẽ & bền bỉ</div>
+                    <div class="price">Giá từ 600 triệu</div>
+                    <div class="actions"><button class="btn btn-primary" onclick="prefillForm('Triton')">Nhận báo
+                            giá</button><button class="btn" onclick="openGallery('Triton')">Xem ảnh</button></div>
+                </article>
+
+                <article class="card">
+                    <!-- <img src="https://via.placeholder.com/600x360?text=Destinator" alt="Destinator"> -->
+                    <img src="./img/DST.jpg" alt="Destinator">
+                    <h3>Destinator</h3>
+                    <div class="meta">Phiên bản cao cấp / đặc biệt</div>
+                    <div class="price">Liên hệ để biết giá</div>
+                    <div class="actions"><button class="btn btn-primary" onclick="prefillForm('Destinator')">Nhận báo
+                            giá</button><button class="btn" onclick="openGallery('Destinator')">Xem ảnh</button></div>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="offers" style="margin-top:20px">
+            <h2>Ưu đãi & Tin tức</h2>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px">
+                <article class="card">
+                    <h4>Miễn 100% thuế trước bạ</h4>
+                    <p class="meta">Áp dụng cho một số phiên bản. Liên hệ để kiểm tra tồn kho và màu.</p>
+                </article>
+                <article class="card">
+                    <h4>Hỗ trợ vay trả góp</h4>
+                    <p class="meta">Hỗ trợ thủ tục nhanh, lãi suất cạnh tranh, giải ngân trong 24-48h.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="testimonials" style="margin-top:20px">
+            <h2>Khách hàng nói gì</h2>
+            <div class="testimonials">
+                <div class="testimonial"><strong>Nguyễn A</strong>
+                    <p class="meta">"Đăng Dũng tư vấn tận tâm, giá rõ ràng, làm thủ tục nhanh."</p>
+                </div>
+                <div class="testimonial"><strong>Trần B</strong>
+                    <p class="meta">"Giao xe đúng hẹn, hỗ trợ sau bán hàng tốt."</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" style="margin-top:20px">
+            <h2>Liên hệ / Đăng ký lái thử</h2>
+            <div class="contact">
+                <form id="leadForm" onsubmit="return submitForm(event)">
+                    <div class="row">
+                        <input id="name" placeholder="Họ & tên" required>
+                        <input id="phone" placeholder="Số điện thoại (Zalo)" required>
+                    </div>
+                    <div class="row">
+                        <select id="model">
+                            <option value="">Chọn mẫu xe quan tâm</option>
+                            <option>Xpander</option>
+                            <option>Xpander Cross</option>
+                            <option>Xforce</option>
+                            <option>Attrage</option>
+                            <option>Triton</option>
+                            <option>Destinator</option>
+                        </select>
+                        <input id="city" placeholder="Thành phố / Quận (ví dụ: Phan Rang)" required>
+                    </div>
+                    <textarea id="note" placeholder="Ghi chú / Yêu cầu thêm (ví dụ: màu, thời gian lái thử)"></textarea>
+                    <div style="display:flex;gap:10px">
+                        <button class="btn btn-primary" type="submit">Gửi yêu cầu</button>
+                        <button class="btn" type="button" onclick="callMe()">Gọi ngay</button>
+                    </div>
+                    <p id="formMsg" style="color:green;display:none;margin-top:8px">Yêu cầu đã gửi! Tôi sẽ liên hệ trong
+                        vòng vài giờ.</p>
+                </form>
+
+                <div style="margin-top:12px;color:var(--muted)">
+                    ➖➖➖➖🚘🚘🚘➖➖➖➖➖
+                    <br>
+                    <strong>Địa chỉ:</strong> <a href="http://maps.app.goo.gl/C5jgjRxZmSUWf4Xs6?g_st=ipc"
+                        target="_blank">𝐌𝐈𝐓𝐒𝐔𝐁𝐈𝐒𝐇𝐈 𝐒𝐀𝐕𝐈𝐂𝐎 𝐊𝐇𝐀́𝐍𝐇 𝐇𝐎̀𝐀 - CN NAM KHÁNH HOÀ .</a>
+                    <br>
+                    <strong> ⛩ </strong>Showroom Nha Trang: 841 Đường 23/10, Tây Nha Trang , Khánh Hòa.
+                    <br>
+                    <strong> ⛩ </strong>Showroom Nam Khánh Hoà: QL1A Thôn Long Bình 2, Xã Phước Dinh, Tỉnh Khánh Hoà. (
+                    Tỉnh Ninh Thuận
+                    Cũ)( Sát bên kho Hưng Phú )
+                    <br>
+                    <strong>Email:</strong> dungho2501@gmail.com
+                    <br>
+                    <strong>Hotline/Zalo:</strong> <a href="tel:+84901234567">094 589 3127</a>
+                </div>
+
+            </div>
+        </section>
+
+        <footer>
+            <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">
+                <div>© <strong>Đăng Dũng</strong> — Tư vấn Mitsubishi • Nam Khánh Hòa</div>
+                <div style="color:var(--muted)">Thiết kế demo • Sẵn sàng triển khai lên hosting</div>
+            </div>
+        </footer>
+
+    </main>
+
+    <div class="sticky-cta">
+        <a href="https://wa.me/84901234567?text=Ch%C3%A0o%20anh%20D%E1%BB%A9ng,%20t%C3%B4i%20mu%E1%BB%91n%20nh%E1%BA%ADn%20b%C3%A1o%20gi%C3%A1%20xe"
+            target="_blank">Chat/Zalo • 094 589 3127</a>
+    </div>
+
+    <script>
+        // Simple JS helpers for demo behavior (no backend)
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function prefillForm(model) {
+            document.getElementById('model').value = model;
+            scrollToSection('contact');
+        }
+
+        function openGallery(model) {
+            alert('Mở gallery ảnh: ' + model + ' (demo)');
+        }
+
+        function callMe() {
+            window.location.href = 'tel:+84901234567';
+        }
+
+        function submitForm(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const model = document.getElementById('model').value || 'Không chọn';
+            const city = document.getElementById('city').value.trim();
+            const note = document.getElementById('note').value.trim();
+
+            // Build message
+            const subject = encodeURIComponent('Yêu cầu nhận báo giá từ website');
+            const body = encodeURIComponent(`Họ tên: ${name}%0ASĐT: ${phone}%0AMẫu xe: ${model}%0AĐịa điểm: ${city}%0AGhi chú: ${note}`);
+            // Try mailto first
+            const mailto = `mailto:dangdung@example.com?subject=${subject}&body=${body}`;
+
+            // Save to localStorage (demo) so leads persist locally
+            const leads = JSON.parse(localStorage.getItem('leads') || '[]');
+            leads.push({ name, phone, model, city, note, ts: new Date().toISOString() });
+            localStorage.setItem('leads', JSON.stringify(leads));
+
+            // Show success message
+            document.getElementById('formMsg').style.display = 'block';
+
+            // Try opening mail client (will open default mail app). If blocked, copy to clipboard.
+            const opened = window.open(mailto, '_blank');
+            setTimeout(() => {
+                if (!opened) {
+                    // fallback: copy to clipboard
+                    const text = `Yêu cầu báo giá\nHọ tên: ${name}\nSĐT: ${phone}\nMẫu xe: ${model}\nĐịa điểm: ${city}\nGhi chú: ${note}`;
+                    navigator.clipboard && navigator.clipboard.writeText(text).then(() => {
+                        alert('Yêu cầu đã được copy vào clipboard. Vui lòng dán vào Zalo/Mail để gửi cho tôi.');
+                    }, () => {
+                        alert('Vui lòng gửi yêu cầu này tới: 094 589 3127 (Zalo)');
+                    });
+                }
+            }, 500);
+
+            return false;
+        }
+
+        // Accessibility: allow Enter to submit on phone field
+        document.getElementById('phone').addEventListener('keyup', function (e) { if (e.key === 'Enter') document.getElementById('leadForm').requestSubmit(); });
+
+    </script>
+
+    <!-- Structured data (LocalBusiness) for SEO -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoDealer",
+    "name": "Đăng Dũng - Tư vấn Mitsubishi",
+    "telephone": "+84 94 589 3127",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Showroom Mitsubishi - Nam Khánh Hòa (điền địa chỉ)",
+      "addressLocality": "Phan Rang",
+      "addressRegion": "Ninh Thuận",
+      "addressCountry": "VN"
+    },
+    "image": "https://via.placeholder.com/1200x630?text=Mitsubishi+%C4%90%C4%83ng+D%C5%A9ng",
+    "url": "https://dangdung-mitsubishi.vn"
+  }
+  </script>
+</body>
+
+</html>
