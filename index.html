@@ -296,6 +296,35 @@
             box-shadow: 0 10px 30px rgba(200, 16, 46, 0.18)
         }
 
+        /* Nút Back to Top */
+        #backToTop {
+            position: fixed;
+            bottom: 70px;
+            right: 25px;
+            background: #0a84ff38;
+            color: gray;
+            padding: 12px 16px;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+
+        #backToTop.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+
+        #backToTop:hover {
+            background: #006be6;
+        }
+
         /* responsive */
         @media (max-width:980px) {
             .hero {
@@ -318,6 +347,14 @@
 
             .brand h1 {
                 font-size: 16px
+            }
+        }
+
+        @media (max-width: 540px) {
+            .nav {
+                /* grid-area: 1 / span 6; */
+                flex-wrap: wrap;
+                height: 150px;
             }
         }
     </style>
@@ -550,7 +587,23 @@
         <a href="https://wa.me/84945893127?text=Ch%C3%A0o%20anh%20D%E1%BB%A9ng,%20t%C3%B4i%20mu%E1%BB%91n%20nh%E1%BA%ADn%20b%C3%A1o%20gi%C3%A1%20xe"
             target="_blank">Chat/Zalo • 094 589 3127</a>
     </div>
+    <!-- Back to Top Button -->
+    <button id="backToTop">▲ Top</button>
 
+    <script>
+        const btn = document.getElementById("backToTop");
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 300) {
+                btn.classList.add("show");
+            } else {
+                btn.classList.remove("show");
+            }
+        });
+
+        btn.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
     <script>
         // Simple JS helpers for demo behavior (no backend)
         function scrollToSection(id) {
